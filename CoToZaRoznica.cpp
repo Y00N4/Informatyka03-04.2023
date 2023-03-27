@@ -1,5 +1,80 @@
-// CoToZaRoznica.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
+//zadanie ze struktur na stworzenie dzienniczka. 
+
+#include <iostream>
+#include<vector>
+#include<map>
+using namespace std;
+
+struct Osoba{
+    int numerwDzienniku;
+    string imie;
+    string nazwisko;
+    vector<int> oceny;
+    map<string, vector<int>> przedmioty;
+
+    float Srednia() {
+        float suma = .0;
+        for (auto ocena : oceny) {
+            suma += ocena;
+        }
+        return suma / oceny.size();
+    }
+
+    void PokazUcznia() {
+        cout << imie << " " << nazwisko << "\n";
+        for (auto ocena : oceny) {
+            cout << ocena << " ";
+        }cout << endl;
+        cout << "Średnia: " << Srednia() << endl;
+    }
+};
+
+int main() {
+    vector<Osoba> dziennik;
+
+    int numer = 0;
+    while (true) {
+        Osoba uczen;
+        cout << "Podaj numer w dzienniku: ";
+        cin >> numer;
+
+        if (numer == 0)
+            break;
+
+        uczen.numerwDzienniku = numer;
+
+        cout << "Podaj imie: ";
+        cin >> uczen.imie;
+        cout << "Podaj nazwisko: ";
+        cin >> uczen.nazwisko;
+
+        cout << "Podaj oceny: (0 = koniec)";
+        int ocena = -1;
+        while (ocena != 0) {
+            cin >> ocena;
+            if (ocena < 0 || ocena > 6) {
+                cout << "Blad\n";
+                continue;
+            }
+            uczen.oceny.push_back(ocena);
+        }
+        dziennik.push_back(uczen);
+        cout << "\nDodano ucznia\n";
+    }
+
+    cout << "\n\n ------------------------------------- \n";
+
+    for (auto osoba : dziennik) {
+        osoba.PokazUcznia();
+    }
+}
+
+
+
+
+
+
 
 //program w ktorym podaje sie liczba a program musi ja zgadnac i podac ilosc prob
 #include <iostream>
