@@ -289,6 +289,27 @@ int main()
 }
                           
 
+
+                          // PRZESYŁANIE PLIKU DO PROGRAMU
+
+                                 int main()
+                                {
+                                    string liczba;
+                                    fstream plik("pary.txt");
+                                    if(plik.is_open()){
+                                        while(plik >> liczba) {
+                                            cout << liczba << endl;
+                                        }
+                                    } else {
+                                        cout << "Nie ma pliku." << endl;
+                                    }
+
+
+                                    plik.close();
+                                    return 0;
+                                }
+
+
                       
                           
                           
