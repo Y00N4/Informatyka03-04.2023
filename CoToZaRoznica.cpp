@@ -309,7 +309,39 @@ int main()
                                     return 0;
                                 }
 
+// ZADANIE MATURALNE MATURA PROBNA GRUDZIEN 2022
+                      #include<iostream>
+#include<fstream>
 
-                      
+const int N = 100000;
+int A = 0;
+
+void test(int x, int y)
+{
+    if(2*x <= N)
+    {
+        test(2*x, y);
+    }
+    if(2*x+1 <= N)
+    {
+        test(2*x+1, y);
+    }
+    if(x == y)
+        std::cout<<A<<" "<<y<<std::endl;
+}
+
+
+int main()
+{
+    std::ifstream infile("pary.txt");
+    int a,b;
+    while (infile >> a >> b)
+    {
+        A = a;
+        test(a,b);
+    }
+
+}
+*/
                           
                           
