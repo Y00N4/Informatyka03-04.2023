@@ -428,6 +428,33 @@ int main()
     xyz.wyswietlanieinftrojkat();
     return 0;
 }
+23.05
+
+// zadanie 23.05
+#include <iostream>
+
+using namespace std;
+string bin(int l){
+    
+string liczba=" ";
+while (l>0){
+if (l%2=0){
+    liczba+=0;
+}
+else (l%2=0)
+    liczba+=1;
+    l=l-1;
+}
+
+
+
+int main(){
+    string()
+cout << "podaj liczbe: \n";
+cin >> 
+  
+
+}
 
                           
                           
