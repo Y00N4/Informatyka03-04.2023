@@ -456,5 +456,41 @@ cin >>
 
 }
 
-                          
+                          ZADANIE NA OCENE: 
+#include <iostream>
+
+using namespace std;
+struct Student {
+    string imie;
+    string nazwisko;
+    int wiek;
+
+};
+
+float srednia(int a, int b, int c){
+    return (a+b+c)/3.0;
+}
+
+
+int main()
+{
+
+    Student tab[3]= {
+    {"Tomasz", "Kowalski", 22},
+    {"Maurycy","Nowak", 22},
+    {"Arek", "Lis", 21}};
+
+    //srednia(tab[0].wiek,tab[1].wiek, tab[2].wiek);
+
+ for (int i = 0; i < 3; i++) {
+        cout << "Imie: " << tab[i].imie << endl;
+        cout << "Nazwisko: " << tab[i].nazwisko << endl;
+        cout << "Wiek: " << tab[i].wiek <<endl;
+        cout << endl;
+        cout << "srednia wieku to:" << srednia(tab[0].wiek,tab[1].wiek, tab[2].wiek) << endl;
+
+ }
+
+
+}
                           
