@@ -535,5 +535,88 @@ int main(){
     Prostokat cd(2,3);
     cd.wyswietlDane();
 }
+// program odczytuje 10 liczb i odczytuje najmniejsza z nich
+//ilosc lb = lb w ciaglu fibonacciego
+// najwiekszy wspolny dzielnik + algorytm euklidesa
+// struktura człowiek imie naziwsko 4 człowieki porownjesz wiek i couttujesz wszytskie informacjie dotyczace ,=mnajmloszej osoby 
+#include <iostream>
 
+using namespace std;
+
+//int main()
+//
+   // int najmniejsza=INT_MAX;
+   // int najwieksza=INT_MIN;
+ //int tab[10];
+ //for (int i=0; i<10;i++){
+  //  cin >> tab[i];}
+
+  //for (int i=0; i<10;i++){
+ //   if (tab[i]<najmniejsza ){
+     //   najmniejsza=tab[i];}
+
+  //  if (tab[i]>najwieksza){
+     //   najwieksza=tab[i];}
+ //}
+    //cout << "najmniejsza liczba to: " << najmniejsza << endl;
+    //cout << "Najwieksza liczba to: "<< najwieksza<< endl;
+
+   // return 0;
+//}
+
+
+//void ciagfibonacciego(int il){
+   // int a=0;
+   // int b=1;
+   // cout << a << " ";
+
+    //for (int i=0; i<il-1;i++){
+    //    cout << b << " ";
+
+     //   b= a+b;
+     //   a=b-a;
+   // }
+
+//}
+//int main() {
+    int ilosc;
+    cout <<"podaj ilosc: :" << endl;
+   cin >> ilosc;
+
+  ciagfibonacciego(ilosc);
+return 0;
+}
+*/
+ /* int nwd(int a, int b){
+    int wynik;
+
+    while (true){
+    wynik=a%b;
+
+    if (wynik==0)
+        return b;
+    else
+        a=b;
+        b=wynik;
+    }
+ }
+
+
+int main(){
+    int a;
+    int b;
+
+ cout << "podaj a: " << endl;
+ cin >> a;
+ cout <<"podaj b: " << endl;
+ cin >> b;
+
+ nwd(a,b);
+cout << "najwiekszy wspolny dzielnik to: " << endl;
+cout << nwd(a,b);
+
+return 0;
+}
+
+*/
                           
